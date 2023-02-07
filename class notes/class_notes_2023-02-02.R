@@ -35,6 +35,7 @@ arctic_ice = read.delim(url,
                         col.names=c("Year", "Month", "Day", "Extent",
                                     "Missing", "Source_Date"))
 head(arctic_ice)
+typeof(arctic_ice)
 
 arctic_ice$date = make_date(year=arctic_ice$Year, 
                             month=arctic_ice$Month, 
